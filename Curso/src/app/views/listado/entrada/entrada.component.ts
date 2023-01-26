@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Entrada } from 'src/app/shared/interfaces';
+import { EntradaService } from 'src/app/shared/services/entrada.service';
 
 @Component({
   selector: 'app-entrada',
@@ -8,10 +9,11 @@ import { Entrada } from 'src/app/shared/interfaces';
 })
 export class EntradaComponent implements OnInit{
   @Input()
-  public entrada!: Entrada;
+  public entrada!: any;
 
   constructor(){}
   ngOnInit(): void {
   }
+
 
 }
